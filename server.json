@@ -1,0 +1,25 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.pipeworx-io/nutrition",
+  "title": "nutrition",
+  "description": "Nutrition MCP — wraps Open Food Facts API (free, no auth)",
+  "version": "0.1.0",
+  "websiteUrl": "https://pipeworx.io/packs/nutrition",
+  "repository": {
+    "url": "https://github.com/pipeworx-io/mcp-nutrition",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@pipeworx/mcp-nutrition",
+      "version": "0.1.0"
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://gateway.pipeworx.io/nutrition/mcp"
+    }
+  ]
+}

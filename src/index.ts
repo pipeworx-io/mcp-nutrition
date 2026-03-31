@@ -1,11 +1,3 @@
-/**
- * Nutrition MCP — wraps Open Food Facts API (free, no auth)
- *
- * Tools:
- * - search_products: search food products by name, brand, or keyword
- * - get_product: full nutrition details for a product by barcode
- */
-
 interface McpToolDefinition {
   name: string;
   description: string;
@@ -20,6 +12,15 @@ interface McpToolExport {
   tools: McpToolDefinition[];
   callTool: (name: string, args: Record<string, unknown>) => Promise<unknown>;
 }
+
+/**
+ * Nutrition MCP — wraps Open Food Facts API (free, no auth)
+ *
+ * Tools:
+ * - search_products: search food products by name, brand, or keyword
+ * - get_product: full nutrition details for a product by barcode
+ */
+
 
 const BASE_URL = 'https://world.openfoodfacts.org';
 

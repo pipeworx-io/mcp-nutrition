@@ -1,15 +1,19 @@
 {
   "name": "@pipeworx/mcp-nutrition",
   "version": "0.1.0",
+  "description": "Nutrition MCP — wraps Open Food Facts API (free, no auth)",
   "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "nutrition"],
   "license": "MIT",
-  "keywords": [
-    "mcp",
-    "mcp-server",
-    "model-context-protocol",
-    "pipeworx",
-    "nutrition"
-  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pipeworx-io/mcp-nutrition"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
   "devDependencies": {
     "typescript": "^5.7.0"
   }
